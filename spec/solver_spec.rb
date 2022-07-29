@@ -14,8 +14,8 @@ describe Solver do
     end
 
     it 'test for factorial of -5 should raise invalid input ' do
-      number_negative = solver.factorial(-5)
-      expect(number_negative).to eq 'ivalid input'
+      solver = Solver.new
+      expect { solver.factorial(-5) }.to raise_error(StandardError, 'Number is negative')
     end
 
     it 'test reverse of the word hello should return olleh' do
@@ -25,17 +25,17 @@ describe Solver do
 
     it 'test for divisibility by 3 should return fizz' do
       number_three = solver.fizzbuzz(9)
-      expect(number_three).to eq 'fizz'
+      expect(number_three).to eq 'Fizz'
     end
 
     it 'test for divisibility by 5 should return buzz' do
       number_five = solver.fizzbuzz(10)
-      expect(number_five).to eq 'buzz'
+      expect(number_five).to eq 'Buzz'
     end
 
     it 'test for divisibility by 3 and 5 should return fizzbuzz' do
       number_three_five = solver.fizzbuzz(15)
-      expect(number_three_five).to eq 'fizzbuzz'
+      expect(number_three_five).to eq 'FizzBuzz'
     end
 
     it "test any case of 2 should return '2' " do
