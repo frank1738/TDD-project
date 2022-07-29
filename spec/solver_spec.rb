@@ -1,7 +1,7 @@
 require './solver'
 
 describe Solver do
-  context 'test solver class' do
+  context 'test solver class' do # rubocop:disable Metrics/ClassLength
     solver = Solver.new
     it 'test factorial of  a number 5 should return 120' do
       number_factorial = solver.factorial(5)
