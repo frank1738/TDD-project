@@ -19,7 +19,14 @@ Clone the project by using terminal:
 git clone https://github.com/frank1738/TDD-project.git
 
 cd TDD-project
+
 ```
+
+## To test
+
+- gem install rspec
+
+- rspec spec
 
 ### Prerequisites
 
